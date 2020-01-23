@@ -31,7 +31,7 @@ func addition(x int, y int) int {
 func main() {
 	fmt.Println(addition(1, 4))
 
-	//传递类型不正确的参数 下面这段代码会报错
+	//传递类型不正确的参数 下面这段代码会报错 错误原因是因为在需求int的地方使用了字符串
 	//var s string ="fuck"
 	//fmt.Println(addition(1, s))
 
