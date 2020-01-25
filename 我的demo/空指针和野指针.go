@@ -13,12 +13,12 @@
 
 //野指针：被一片无效的地址空间初始化。
 
-//package main
-//
-//import "fmt"
-//
-//func main() {
-//	var p *int = 0
-//	fmt.Println(*p)
-//
-//}
+package main
+
+import "fmt"
+
+func main() {
+	var p *int = 0
+	fmt.Println(*p)
+
+}
