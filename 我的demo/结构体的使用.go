@@ -21,6 +21,15 @@ func main() {
 	//索引成员变量 “.”
 	fmt.Printf("%q\n", man2.name)
 
+	var man3 Person
+	man3.name = "sam"
+	man3.sex = 'a'
+	man3.age = 99
+	fmt.Println(man3)
+	man3.age = 100
+	fmt.Println(man3)
+
+
 }
 
 /*
