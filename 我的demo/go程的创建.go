@@ -31,3 +31,5 @@ func main() {
 	}
 
 }
+
+//主goroutine退出后，其他的工作goroutine也会自动退出
