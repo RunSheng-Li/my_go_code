@@ -1,4 +1,4 @@
-package main
+package 通道简介
 
 import (
 	"fmt"
