@@ -21,3 +21,5 @@ func main() {
 	receiver(messages)
 
 }
+
+//close用来关闭通道，禁止再向通道发送消息
