@@ -1,0 +1,24 @@
+创建Goroutine程
+
+	创建于进程中。 直接使用 go 关键，放置于 函数调用前面，产生一个 go程。 并发。
+
+Goroutine的特性：【重点】
+
+	主go程结束，子go程随之退出。
+
+runtime.Gosched()：
+
+	出让当前go程所占用的 cpu时间片。当再次获得cpu时，从出让位置继续回复执行。
+
+	—— 时间片轮转调度算法。
+
+
+runtime.Goexit()：
+
+	return：	返回当前函数调用到调用者那里去。 return之前的 defer 注册生效。
+
+	Goexit():   结束调用该函数的当前go程。Goexit():之前注册的 defer都生效。
+
+runtime.GOMAXPROCS():
+
+	设置当前 进程使用的最大cpu核数。 返回 上一次调用成功的设置值。 首次调用返回默认值。

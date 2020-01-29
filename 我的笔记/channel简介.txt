@@ -1,0 +1,22 @@
+【补充知识点】：
+
+	每当有一个进程启动时，系统会自动打开三个文件： 标准输入、标准输出、标准错误。 —— 对应三个文件： stdin、stdout、stderr
+
+	当进行运行结束。操作系统自动关闭三个文件。
+
+channel：
+	是一种数据类型。 对应一个“管道”（通道 FIFO）
+
+	channel的定义：
+
+		make (chan  在channel中传递的数据类型， 容量)	容量= 0： 无缓冲channel， 容量 > 0 ：有缓冲channel
+
+		e.g.： make（chan int） 或 make （chan string , 0）
+
+	channel有两个端：
+
+		一端：写端（传入端）    chan <-
+
+		另一端： 读端（传出端）<- chan
+
+		要求：读端和写端必须同时满足条件，才在shan上进行数据流动。否则，则阻塞。
