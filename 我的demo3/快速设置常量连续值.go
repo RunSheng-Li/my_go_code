@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(three)
 	fmt.Println(five)
 
+	//<<表示左移
 	const (
 		Open = 1 << iota
 		Close
