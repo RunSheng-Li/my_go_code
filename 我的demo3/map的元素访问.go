@@ -16,3 +16,5 @@ func main() {
 		fmt.Println("不存在这个key")
 	}
 }
+
+//可以用map实现set相同的特性
